@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D11D4722159E0800932E4A /* Whitakers_Word_Helper.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D4622159E0800932E4A /* Whitakers_Word_Helper.entitlements */; };
+		50D11D4922159E0800932E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D11D4822159E0800932E4A /* AppDelegate.swift */; };
+		50D11D4C22159E0800932E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D4A22159E0800932E4A /* Main.storyboard */; };
+		50D11D4E22159E0800932E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D11D4D22159E0800932E4A /* ViewController.swift */; };
+		50D11D5022159E0D00932E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D4F22159E0D00932E4A /* Assets.xcassets */; };
+		50D11D5722159E0D00932E4A /* Whitakers Word Helper Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50D11D5622159E0D00932E4A /* Whitakers Word Helper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50D11D5C22159E0D00932E4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D11D5B22159E0D00932E4A /* Cocoa.framework */; };
+		50D11D5F22159E0D00932E4A /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D11D5E22159E0D00932E4A /* SafariExtensionHandler.swift */; };
+		50D11D6122159E0D00932E4A /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D11D6022159E0D00932E4A /* SafariExtensionViewController.swift */; };
+		50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */; };
+		50D11D6722159E0D00932E4A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6622159E0D00932E4A /* script.js */; };
+		50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50D11D5822159E0D00932E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D11D3B22159E0800932E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D11D5522159E0D00932E4A;
+			remoteInfo = "Whitakers Word Helper Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50D11D7022159E0D00932E4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50D11D5722159E0D00932E4A /* Whitakers Word Helper Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		50D11D4322159E0800932E4A /* Whitakers Word Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whitakers Word Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D11D4622159E0800932E4A /* Whitakers_Word_Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whitakers_Word_Helper.entitlements; sourceTree = "<group>"; };
+		50D11D4822159E0800932E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50D11D4B22159E0800932E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50D11D4D22159E0800932E4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50D11D4F22159E0D00932E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50D11D5122159E0D00932E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D11D5622159E0D00932E4A /* Whitakers Word Helper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Whitakers Word Helper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D11D5B22159E0D00932E4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		50D11D5E22159E0D00932E4A /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		50D11D6022159E0D00932E4A /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		50D11D6322159E0D00932E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		50D11D6522159E0D00932E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D11D6622159E0D00932E4A /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whitakers_Word_Helper_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D11D4022159E0800932E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D11D5322159E0D00932E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D11D5C22159E0D00932E4A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D11D3A22159E0800932E4A = {
+			isa = PBXGroup;
+			children = (
+				50D11D4522159E0800932E4A /* Whitakers Word Helper */,
+				50D11D5D22159E0D00932E4A /* Whitakers Word Helper Extension */,
+				50D11D5A22159E0D00932E4A /* Frameworks */,
+				50D11D4422159E0800932E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50D11D4422159E0800932E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D11D4322159E0800932E4A /* Whitakers Word Helper.app */,
+				50D11D5622159E0D00932E4A /* Whitakers Word Helper Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D11D4522159E0800932E4A /* Whitakers Word Helper */ = {
+			isa = PBXGroup;
+			children = (
+				50D11D4622159E0800932E4A /* Whitakers_Word_Helper.entitlements */,
+				50D11D4822159E0800932E4A /* AppDelegate.swift */,
+				50D11D4A22159E0800932E4A /* Main.storyboard */,
+				50D11D4D22159E0800932E4A /* ViewController.swift */,
+				50D11D4F22159E0D00932E4A /* Assets.xcassets */,
+				50D11D5122159E0D00932E4A /* Info.plist */,
+			);
+			path = "Whitakers Word Helper";
+			sourceTree = "<group>";
+		};
+		50D11D5A22159E0D00932E4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50D11D5B22159E0D00932E4A /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50D11D5D22159E0D00932E4A /* Whitakers Word Helper Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50D11D5E22159E0D00932E4A /* SafariExtensionHandler.swift */,
+				50D11D6022159E0D00932E4A /* SafariExtensionViewController.swift */,
+				50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */,
+				50D11D6522159E0D00932E4A /* Info.plist */,
+				50D11D6622159E0D00932E4A /* script.js */,
+				50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */,
+				50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */,
+			);
+			path = "Whitakers Word Helper Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D11D4222159E0800932E4A /* Whitakers Word Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D11D7122159E0D00932E4A /* Build configuration list for PBXNativeTarget "Whitakers Word Helper" */;
+			buildPhases = (
+				50D11D3F22159E0800932E4A /* Sources */,
+				50D11D4022159E0800932E4A /* Frameworks */,
+				50D11D4122159E0800932E4A /* Resources */,
+				50D11D7022159E0D00932E4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D11D5922159E0D00932E4A /* PBXTargetDependency */,
+			);
+			name = "Whitakers Word Helper";
+			productName = "Whitakers Word Helper";
+			productReference = 50D11D4322159E0800932E4A /* Whitakers Word Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50D11D5522159E0D00932E4A /* Whitakers Word Helper Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D11D6D22159E0D00932E4A /* Build configuration list for PBXNativeTarget "Whitakers Word Helper Extension" */;
+			buildPhases = (
+				50D11D5222159E0D00932E4A /* Sources */,
+				50D11D5322159E0D00932E4A /* Frameworks */,
+				50D11D5422159E0D00932E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Whitakers Word Helper Extension";
+			productName = "Whitakers Word Helper Extension";
+			productReference = 50D11D5622159E0D00932E4A /* Whitakers Word Helper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D11D3B22159E0800932E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Max Sonderegger";
+				TargetAttributes = {
+					50D11D4222159E0800932E4A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					50D11D5522159E0D00932E4A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 50D11D3E22159E0800932E4A /* Build configuration list for PBXProject "Whitakers Word Helper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50D11D3A22159E0800932E4A;
+			productRefGroup = 50D11D4422159E0800932E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D11D4222159E0800932E4A /* Whitakers Word Helper */,
+				50D11D5522159E0D00932E4A /* Whitakers Word Helper Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D11D4122159E0800932E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D11D4722159E0800932E4A /* Whitakers_Word_Helper.entitlements in Resources */,
+				50D11D5022159E0D00932E4A /* Assets.xcassets in Resources */,
+				50D11D4C22159E0800932E4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D11D5422159E0D00932E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */,
+				50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */,
+				50D11D6722159E0D00932E4A /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D11D3F22159E0800932E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D11D4E22159E0800932E4A /* ViewController.swift in Sources */,
+				50D11D4922159E0800932E4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D11D5222159E0D00932E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D11D6122159E0D00932E4A /* SafariExtensionViewController.swift in Sources */,
+				50D11D5F22159E0D00932E4A /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50D11D5922159E0D00932E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D11D5522159E0D00932E4A /* Whitakers Word Helper Extension */;
+			targetProxy = 50D11D5822159E0D00932E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50D11D4A22159E0800932E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D11D4B22159E0800932E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50D11D6322159E0D00932E4A /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50D11D6B22159E0D00932E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50D11D6C22159E0D00932E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		50D11D6E22159E0D00932E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers_Word_Helper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L85WT654X;
+				INFOPLIST_FILE = "Whitakers Word Helper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FullBlown.Whitakers-Word-Helper-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		50D11D6F22159E0D00932E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers_Word_Helper_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L85WT654X;
+				INFOPLIST_FILE = "Whitakers Word Helper Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FullBlown.Whitakers-Word-Helper-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		50D11D7222159E0D00932E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper/Whitakers_Word_Helper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6L85WT654X;
+				INFOPLIST_FILE = "Whitakers Word Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FullBlown.Whitakers-Word-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		50D11D7322159E0D00932E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper/Whitakers_Word_Helper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6L85WT654X;
+				INFOPLIST_FILE = "Whitakers Word Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FullBlown.Whitakers-Word-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D11D3E22159E0800932E4A /* Build configuration list for PBXProject "Whitakers Word Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D11D6B22159E0D00932E4A /* Debug */,
+				50D11D6C22159E0D00932E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D11D6D22159E0D00932E4A /* Build configuration list for PBXNativeTarget "Whitakers Word Helper Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D11D6E22159E0D00932E4A /* Debug */,
+				50D11D6F22159E0D00932E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D11D7122159E0D00932E4A /* Build configuration list for PBXNativeTarget "Whitakers Word Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D11D7222159E0D00932E4A /* Debug */,
+				50D11D7322159E0D00932E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50D11D3B22159E0800932E4A /* Project object */;
+}
