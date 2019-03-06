@@ -19,6 +19,8 @@
 		50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */; };
 		50D11D6722159E0D00932E4A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6622159E0D00932E4A /* script.js */; };
 		50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */; };
+		50D11D7522170C3C00932E4A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D7422170C3C00932E4A /* style.css */; };
+		50D11E13222EE66900932E4A /* jQuery.js in Resources */ = {isa = PBXBuildFile; fileRef = 50D11E12222EE66800932E4A /* jQuery.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		50D11D6622159E0D00932E4A /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whitakers_Word_Helper_Extension.entitlements; sourceTree = "<group>"; };
+		50D11D7422170C3C00932E4A /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		50D11E12222EE66800932E4A /* jQuery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jQuery.js; sourceTree = "<group>"; };
+		50D11E14222F1B6600932E4A /* Whitakers Word Helper Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Whitakers Word Helper Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +131,14 @@
 		50D11D5D22159E0D00932E4A /* Whitakers Word Helper Extension */ = {
 			isa = PBXGroup;
 			children = (
+				50D11E14222F1B6600932E4A /* Whitakers Word Helper Extension.entitlements */,
 				50D11D5E22159E0D00932E4A /* SafariExtensionHandler.swift */,
 				50D11D6022159E0D00932E4A /* SafariExtensionViewController.swift */,
 				50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */,
+				50D11E12222EE66800932E4A /* jQuery.js */,
 				50D11D6522159E0D00932E4A /* Info.plist */,
 				50D11D6622159E0D00932E4A /* script.js */,
+				50D11D7422170C3C00932E4A /* style.css */,
 				50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */,
 				50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */,
 			);
@@ -191,6 +199,11 @@
 					};
 					50D11D5522159E0D00932E4A = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -229,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */,
+				50D11E13222EE66900932E4A /* jQuery.js in Resources */,
+				50D11D7522170C3C00932E4A /* style.css in Resources */,
 				50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */,
 				50D11D6722159E0D00932E4A /* script.js in Resources */,
 			);
@@ -403,7 +418,7 @@
 		50D11D6E22159E0D00932E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers_Word_Helper_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers Word Helper Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L85WT654X;
 				INFOPLIST_FILE = "Whitakers Word Helper Extension/Info.plist";
@@ -422,7 +437,7 @@
 		50D11D6F22159E0D00932E4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers_Word_Helper_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Whitakers Word Helper Extension/Whitakers Word Helper Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L85WT654X;
 				INFOPLIST_FILE = "Whitakers Word Helper Extension/Info.plist";
