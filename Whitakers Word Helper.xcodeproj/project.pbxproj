@@ -19,8 +19,6 @@
 		50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */; };
 		50D11D6722159E0D00932E4A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6622159E0D00932E4A /* script.js */; };
 		50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */; };
-		50D11D7522170C3C00932E4A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 50D11D7422170C3C00932E4A /* style.css */; };
-		50D11E13222EE66900932E4A /* jQuery.js in Resources */ = {isa = PBXBuildFile; fileRef = 50D11E12222EE66800932E4A /* jQuery.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +62,6 @@
 		50D11D6622159E0D00932E4A /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whitakers_Word_Helper_Extension.entitlements; sourceTree = "<group>"; };
-		50D11D7422170C3C00932E4A /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
-		50D11E12222EE66800932E4A /* jQuery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jQuery.js; sourceTree = "<group>"; };
 		50D11E14222F1B6600932E4A /* Whitakers Word Helper Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Whitakers Word Helper Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5050489A2230284500FD3A8D /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		50D11D3A22159E0800932E4A = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +135,13 @@
 		50D11D5D22159E0D00932E4A /* Whitakers Word Helper Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5050489A2230284500FD3A8D /* Graphics */,
 				50D11E14222F1B6600932E4A /* Whitakers Word Helper Extension.entitlements */,
 				50D11D5E22159E0D00932E4A /* SafariExtensionHandler.swift */,
 				50D11D6022159E0D00932E4A /* SafariExtensionViewController.swift */,
 				50D11D6222159E0D00932E4A /* SafariExtensionViewController.xib */,
-				50D11E12222EE66800932E4A /* jQuery.js */,
 				50D11D6522159E0D00932E4A /* Info.plist */,
 				50D11D6622159E0D00932E4A /* script.js */,
-				50D11D7422170C3C00932E4A /* style.css */,
-				50D11D6822159E0D00932E4A /* ToolbarItemIcon.pdf */,
 				50D11D6A22159E0D00932E4A /* Whitakers_Word_Helper_Extension.entitlements */,
 			);
 			path = "Whitakers Word Helper Extension";
@@ -242,8 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D11D6922159E0D00932E4A /* ToolbarItemIcon.pdf in Resources */,
-				50D11E13222EE66900932E4A /* jQuery.js in Resources */,
-				50D11D7522170C3C00932E4A /* style.css in Resources */,
 				50D11D6422159E0D00932E4A /* SafariExtensionViewController.xib in Resources */,
 				50D11D6722159E0D00932E4A /* script.js in Resources */,
 			);

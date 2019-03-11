@@ -22,13 +22,28 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.archives.nd.edu</key>
+			<dict>
+				<key>NSIncludeSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 	<key>NSExtension</key>
 	<dict>
-		<key>SFSafariStyleSheet</key>
+		<key>SFSafariContextMenu</key>
 		<array>
 			<dict>
-				<key>Style Sheet</key>
-				<string>style.css</string>
+				<key>Text</key>
+				<string>Get Latin Definitions</string>
+				<key>Command</key>
+				<string>searchRequest</string>
 			</dict>
 		</array>
 		<key>NSExtensionPointIdentifier</key>
@@ -37,10 +52,6 @@
 		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
 		<key>SFSafariContentScript</key>
 		<array>
-			<dict>
-				<key>Script</key>
-				<string>jQuery.js</string>
-			</dict>
 			<dict>
 				<key>Script</key>
 				<string>script.js</string>
@@ -55,7 +66,7 @@
 			<key>Image</key>
 			<string>ToolbarItemIcon.pdf</string>
 			<key>Label</key>
-			<string>Your Button</string>
+			<string>Whitakers Words Helper</string>
 		</dict>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>
@@ -70,19 +81,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Max Sonderegger. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
-	<string>This is a Safari Extension. You should tell us what your extension does here.</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>www.archives.nd.edu</key>
-			<dict>
-				<key>NSIncludeSubdomains</key>
-				<true/>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
+	<string>This extension uses the wonderful site designed by the late William Whitaker, to bring detailed and accurate Latin definitions to your fingertips</string>
 </dict>
 </plist>
