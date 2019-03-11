@@ -18,7 +18,7 @@
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "www.png",
+      "filename" : "wwh32x2.png",
       "scale" : "2x"
     },
     {
@@ -29,7 +29,7 @@
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "www-256.png",
+      "filename" : "wwh128x2.png",
       "scale" : "2x"
     },
     {
@@ -40,7 +40,7 @@
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "www-512.png",
+      "filename" : "wwh256x2.png",
       "scale" : "2x"
     },
     {
