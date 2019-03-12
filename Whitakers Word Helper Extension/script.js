@@ -1,7 +1,7 @@
 var WWH_host_div = document.createElement("div");
 WWH_host_div.id = "WWH_host_div";
 var shadowRoot = WWH_host_div.attachShadow({mode: 'closed'});
-shadowRoot.innerHTML = "<style>#WWH_pop_up_div {background-color: rgb(110, 110, 110);padding: 2px !important;border-radius: 10px !important;position: absolute !important;visibility: hidden;min-width: 450px;z-index: 100;opacity: 1 !important;font-family: Consolas, monospace !important;}#WWH_internal_div {background-color: rgb(255, 255, 255);border-radius: 15px !important;padding-left: 5px !important;padding-right: 5px !important;}#WWH_pop_up_div pre {font-family: Consolas, monospace !important;font-size: 14px !important;padding: 0 !important;margin: 0 !important;background-color: rgb(255, 255, 255, 0) !important;color: rgb(0, 0, 0) !important;box-shadow: none !important;line-height: 100% !important;}</style>"
+shadowRoot.innerHTML = "<style>#WWH_pop_up_div {background-color: rgb(110, 110, 110);padding: 2px !important;border-radius: 10px !important;position: absolute !important;visibility: hidden;min-width: 450px;z-index: 100000;opacity: 1 !important;font-family: Consolas, monospace !important;}#WWH_internal_div {background-color: rgb(255, 255, 255);border-radius: 15px !important;padding-left: 5px !important;padding-right: 5px !important;}#WWH_pop_up_div pre {font-family: Consolas, monospace !important;font-size: 14px !important;padding: 0 !important;margin: 0 !important;background-color: rgb(255, 255, 255, 0) !important;color: rgb(0, 0, 0) !important;box-shadow: none !important;line-height: 100% !important;}</style>"
 var pop_up_div = document.createElement("div");
 pop_up_div.id = "WWH_pop_up_div";
 var internal_div = document.createElement("div");
